@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Randy (Zixiang) Zhang · Tech Blog</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="index.html" aria-label="Randy (Zixiang) Zhang home">
+          Randy (Zixiang) Zhang
+        </a>
+        <nav>
+          <a href="index.html" class="active">Blog</a>
+          <a href="cv.html">CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <h1>Exploring virtual platforms, verification, and digital design workflows.</h1>
+          <p>
+            I'm Randy (Zixiang) Zhang, a System Design Engineer sharing notes on SystemC, RISC-V safety
+            verification, and the tooling that accelerates silicon development.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-inner">
+          <h2>Latest writing</h2>
+          <div class="blog-grid">
+            <article class="blog-card">
+              <time datetime="2024-05-10">May 10, 2024</time>
+              <h3>Modeling heterogenous SoCs with SystemC TLM 2.0</h3>
+              <p>
+                Building reusable TLM components, stitching together ISS models, and balancing
+                simulation speed with visibility for firmware bring-up.
+              </p>
+              <a href="#">Read post</a>
+            </article>
+
+            <article class="blog-card">
+              <time datetime="2024-03-28">Mar 28, 2024</time>
+              <h3>Automating RISC-V safety verification flows</h3>
+              <p>
+                A behind-the-scenes look at generating safety mechanisms, integrating formal
+                equivalence checks, and keeping the flow accessible to design teams.
+              </p>
+              <a href="#">Read post</a>
+            </article>
+
+            <article class="blog-card">
+              <time datetime="2024-02-12">Feb 12, 2024</time>
+              <h3>From RTL to HLS: choosing the right abstraction</h3>
+              <p>
+                Comparing RTL, HLS, and behavioral models when prototyping new IP, with lessons from
+                bringing mixed-signal SoCs to life.
+              </p>
+              <a href="#">Read post</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="about">
+        <div class="section-inner">
+          <h2 id="about">About the blog</h2>
+          <p>
+            I publish deep dives on virtual platforms, verification automation, and the tooling that
+            keeps silicon projects on schedule. Expect hands-on walkthroughs, reusable scripts, and
+            honest retros on what worked (and what didn't) in the lab.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>© <span id="year"></span> Randy (Zixiang) Zhang. Built with plain HTML &amp; CSS.</small>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
