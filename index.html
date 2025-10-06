@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Randy Lenasty · Tech Blog</title>
+    <title>Randy (Zixiang) Zhang · Tech Blog</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <header>
       <div class="navbar">
-        <a href="index.html" aria-label="Randy Lenasty home">
-          Randy Lenasty
+        <a href="index.html" aria-label="Randy (Zixiang) Zhang home">
+          Randy (Zixiang) Zhang
         </a>
         <nav>
           <a href="index.html" class="active">Blog</a>
@@ -23,10 +23,10 @@
     <main>
       <section class="hero">
         <div class="hero-inner">
-          <h1>Sharing the journey through code, systems, and learning.</h1>
+          <h1>Exploring virtual platforms, verification, and digital design workflows.</h1>
           <p>
-            I'm Randy, a software engineer focused on building resilient systems, delightful
-            developer tools, and writing about the lessons gathered along the way.
+            I'm Randy (Zixiang) Zhang, a System Design Engineer sharing notes on SystemC, RISC-V safety
+            verification, and the tooling that accelerates silicon development.
           </p>
         </div>
       </section>
@@ -37,30 +37,30 @@
           <div class="blog-grid">
             <article class="blog-card">
               <time datetime="2024-05-10">May 10, 2024</time>
-              <h3>Designing APIs that age gracefully</h3>
+              <h3>Modeling heterogenous SoCs with SystemC TLM 2.0</h3>
               <p>
-                Notes from building a public-facing API, including strategies for versioning,
-                observability, and keeping documentation aligned with reality.
+                Building reusable TLM components, stitching together ISS models, and balancing
+                simulation speed with visibility for firmware bring-up.
               </p>
               <a href="#">Read post</a>
             </article>
 
             <article class="blog-card">
               <time datetime="2024-03-28">Mar 28, 2024</time>
-              <h3>What I learned tuning background job queues</h3>
+              <h3>Automating RISC-V safety verification flows</h3>
               <p>
-                Lessons from scaling worker infrastructure: back-pressure techniques, queue metrics,
-                and the small instrumentation tweaks that saved us from cascading failures.
+                A behind-the-scenes look at generating safety mechanisms, integrating formal
+                equivalence checks, and keeping the flow accessible to design teams.
               </p>
               <a href="#">Read post</a>
             </article>
 
             <article class="blog-card">
               <time datetime="2024-02-12">Feb 12, 2024</time>
-              <h3>How to run incident retros people look forward to</h3>
+              <h3>From RTL to HLS: choosing the right abstraction</h3>
               <p>
-                A facilitation playbook for running blameless retrospectives that result in high-impact
-                follow-up work instead of performative meetings.
+                Comparing RTL, HLS, and behavioral models when prototyping new IP, with lessons from
+                bringing mixed-signal SoCs to life.
               </p>
               <a href="#">Read post</a>
             </article>
@@ -72,17 +72,16 @@
         <div class="section-inner">
           <h2 id="about">About the blog</h2>
           <p>
-            This space tracks what I'm building, debugging, and learning. Expect deep dives into
-            distributed systems, practical tooling tips, and the occasional note on career growth in
-            engineering. Subscribe via RSS or follow along on GitHub to get notified when something
-            new ships.
+            I publish deep dives on virtual platforms, verification automation, and the tooling that
+            keeps silicon projects on schedule. Expect hands-on walkthroughs, reusable scripts, and
+            honest retros on what worked (and what didn't) in the lab.
           </p>
         </div>
       </section>
     </main>
 
     <footer>
-      <small>© <span id="year"></span> Randy Lenasty. Built with plain HTML &amp; CSS.</small>
+      <small>© <span id="year"></span> Randy (Zixiang) Zhang. Built with plain HTML &amp; CSS.</small>
     </footer>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
