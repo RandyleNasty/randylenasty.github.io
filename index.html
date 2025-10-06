@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Randy Lenasty · Tech Blog</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="index.html" aria-label="Randy Lenasty home">
+          Randy Lenasty
+        </a>
+        <nav>
+          <a href="index.html" class="active">Blog</a>
+          <a href="cv.html">CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <h1>Sharing the journey through code, systems, and learning.</h1>
+          <p>
+            I'm Randy, a software engineer focused on building resilient systems, delightful
+            developer tools, and writing about the lessons gathered along the way.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-inner">
+          <h2>Latest writing</h2>
+          <div class="blog-grid">
+            <article class="blog-card">
+              <time datetime="2024-05-10">May 10, 2024</time>
+              <h3>Designing APIs that age gracefully</h3>
+              <p>
+                Notes from building a public-facing API, including strategies for versioning,
+                observability, and keeping documentation aligned with reality.
+              </p>
+              <a href="#">Read post</a>
+            </article>
+
+            <article class="blog-card">
+              <time datetime="2024-03-28">Mar 28, 2024</time>
+              <h3>What I learned tuning background job queues</h3>
+              <p>
+                Lessons from scaling worker infrastructure: back-pressure techniques, queue metrics,
+                and the small instrumentation tweaks that saved us from cascading failures.
+              </p>
+              <a href="#">Read post</a>
+            </article>
+
+            <article class="blog-card">
+              <time datetime="2024-02-12">Feb 12, 2024</time>
+              <h3>How to run incident retros people look forward to</h3>
+              <p>
+                A facilitation playbook for running blameless retrospectives that result in high-impact
+                follow-up work instead of performative meetings.
+              </p>
+              <a href="#">Read post</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="about">
+        <div class="section-inner">
+          <h2 id="about">About the blog</h2>
+          <p>
+            This space tracks what I'm building, debugging, and learning. Expect deep dives into
+            distributed systems, practical tooling tips, and the occasional note on career growth in
+            engineering. Subscribe via RSS or follow along on GitHub to get notified when something
+            new ships.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>© <span id="year"></span> Randy Lenasty. Built with plain HTML &amp; CSS.</small>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

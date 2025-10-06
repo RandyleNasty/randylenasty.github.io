@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Randy Lenasty · Curriculum Vitae</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="index.html" aria-label="Randy Lenasty home">
+          Randy Lenasty
+        </a>
+        <nav>
+          <a href="index.html">Blog</a>
+          <a href="cv.html" class="active">CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-inner">
+          <h1>Curriculum Vitae</h1>
+          <p>
+            Software engineer with experience building distributed systems, leading high-impact
+            projects, and mentoring engineering teams.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:randy.lenasty@example.com">randy.lenasty@example.com</a>
+            <a href="https://github.com/randylenasty">github.com/randylenasty</a>
+            <a href="https://www.linkedin.com/in/randylenasty">linkedin.com/in/randylenasty</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-inner resume-grid">
+          <div class="resume-section">
+            <h3>Experience</h3>
+
+            <div class="resume-item">
+              <h4>Senior Software Engineer · Acme Systems</h4>
+              <span>2021 — Present · Remote</span>
+              <ul>
+                <li>Led migration of legacy services to a containerized platform, reducing deployment times by 60%.</li>
+                <li>Built observability tooling adopted across the org, increasing incident response speed by 35%.</li>
+                <li>Mentored junior engineers and coordinated a guild focused on reliability best practices.</li>
+              </ul>
+            </div>
+
+            <div class="resume-item">
+              <h4>Software Engineer · Northwind Labs</h4>
+              <span>2018 — 2021 · San Francisco, CA</span>
+              <ul>
+                <li>Designed and shipped event-driven architecture powering analytics workflows for 20+ enterprise clients.</li>
+                <li>Introduced automated testing pipelines that cut regressions by half.</li>
+                <li>Collaborated with product and design teams to deliver user-facing features with measurable impact.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-section">
+            <h3>Education</h3>
+            <div class="resume-item">
+              <h4>B.S. Computer Science · University of Cascadia</h4>
+              <span>2014 — 2018</span>
+              <p>Graduated magna cum laude. Specialized in distributed systems and software architecture.</p>
+            </div>
+
+            <h3>Skills</h3>
+            <div class="resume-item">
+              <div class="badge-list">
+                <span class="badge">Go</span>
+                <span class="badge">TypeScript</span>
+                <span class="badge">Python</span>
+                <span class="badge">PostgreSQL</span>
+                <span class="badge">Kubernetes</span>
+                <span class="badge">AWS</span>
+                <span class="badge">Observability</span>
+                <span class="badge">System Design</span>
+              </div>
+            </div>
+
+            <h3>Highlights</h3>
+            <div class="resume-item">
+              <ul>
+                <li>Speaker at the 2023 Cloud Systems Summit on feature flag governance.</li>
+                <li>Co-created an internal mentorship program adopted by 4 engineering teams.</li>
+                <li>Maintainer of several open-source developer tooling projects.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>© <span id="year"></span> Randy Lenasty. Let's build resilient software.</small>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
